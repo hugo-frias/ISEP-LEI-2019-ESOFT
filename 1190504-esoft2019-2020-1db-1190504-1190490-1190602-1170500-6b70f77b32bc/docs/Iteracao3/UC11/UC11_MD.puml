@@ -1,0 +1,56 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+
+class Tarefa {
+  -String refUnica
+  -String designacao
+  -String descInf
+  -String descTec
+  -Integer duracao
+  -Double custo
+}
+
+class Freelancer {
+    -String nome
+    -String NIF
+    -String telefone
+    -String email
+}
+
+
+
+class Anuncio
+{
+  -Period publicitacao
+  -Period candidatura
+  -Period seriacao
+}
+
+class Candidatura
+{
+  -Date dataCandidatura
+  -Double valorPretendido
+  -Integer numDias
+  -String txtApresentacao
+  -String txtMotivacao
+}
+
+Plataforma "1" -- "*" Anuncio : publicita >
+Plataforma "1" -- "*" Freelancer : tem/usa  >
+
+
+Anuncio "0..1" -- "1" Tarefa: publicita >
+Anuncio "0..1" -- "1" Tarefa: da origem <
+Anuncio "1" -- "*" Candidatura: recebe >
+
+
+Candidatura "*" -- "1"  Freelancer: realizada por >
+
+Freelancer "1" -- "*" Candidatura: atualiza >
+@enduml

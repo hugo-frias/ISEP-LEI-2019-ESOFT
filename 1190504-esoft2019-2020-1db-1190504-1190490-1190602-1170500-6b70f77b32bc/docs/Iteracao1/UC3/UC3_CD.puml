@@ -1,0 +1,53 @@
+@startuml
+class ÁreaAtividade {
+  -codigo
+  -descBreve
+  -descDetalhada
+}
+
+class CompetênciaTécnica {
+  -String código
+  -String descBreve
+  -String descDetalhada
+  CompetênciaTécnica(código,descBreve,descDetalhada)
+}
+
+class CategoriaTarefa {
+  -String identificador 
+  -String descrição
+  -String áreaAtiv
+  create (identificador, descrição, áreaAtiv, compTécnica)
+}
+
+class Plataforma {
+  -String designacao
+  
+  getÁreasAtividades()
+  getCompetênciasTécnicas()
+  getAreaByCod(aCod)
+  getCompetenciasTecnicaByid (id)
+  novaCategoriaTarefa(identificador, descrição, áreaAtiv, compTécnica)
+  validaCategoriaTarefa(cat)
+  registaCategoriaTarefa(cat) 
+  - addCategoria(cat) 
+}
+
+
+class DefinirCategoriaTarefaController {
+    getÁreasAtividades()
+    getCompetênciasTécnicas()
+    addCompetênciaTécnica (código,descBreve,descDetalhada)
+    novaCategoriaTarefa(identificador, descrição, área, competência)
+    registaCategoriaTarefa()
+}
+
+class DefinirCategoriaTarefaUI {
+}
+
+DefinirCategoriaTarefaUI ..> DefinirCategoriaTarefaController
+DefinirCategoriaTarefaController ..> Plataforma
+DefinirCategoriaTarefaController ..> CategoriaTarefa
+Plataforma "1" --> "*" CategoriaTarefa: possui
+CategoriaTarefa "1" --> "*" CompetênciaTécnica: possui
+CompetênciaTécnica "1" --> "1" ÁreaAtividade: menciona
+@enduml

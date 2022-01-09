@@ -1,0 +1,75 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+
+class Adjudicacao{
+  -Double valorPretendido
+  -Periodo perRealizacao
+  -String anunId
+  -String descricao
+  -Periodo perAdjudicacao
+}
+
+class Plataforma {
+  -String designacao
+}
+
+class Organizacao {
+  -String nome
+  -String NIF
+  -String website
+  -String telefone
+  -String email
+}
+
+class Tarefa {
+  -String referencia
+  -String designacao
+  -String descInformal
+  -String descTecnica
+  -Integer duracaoEst
+  -Double custoEst
+}
+
+class Anuncio {
+  -Periodo publicitacao
+  -Periodo candidatura
+  -Periodo seriacao
+}
+
+class Seriacao {
+  -Date dataRealizacao
+}
+
+class Candidatura {
+  -Date dataCandidatura
+  -Double valorPretendido
+  -Integer numDias
+  -String txtApresentacao
+  -String txtMotivacao
+}
+
+class Freelancer {
+  -String nome
+  -String email
+  -String telefone
+}
+
+Plataforma "1" -- "*" Organizacao : tem registadas >
+
+Organizacao "1" -- "*" Tarefa: possui >
+
+
+Tarefa "1" -- "0..1" Anuncio: gera >
+
+Freelancer "1" -- "1" Candidatura: contém >
+
+Anuncio "1" -- "0..1" Seriacao: espoleta >
+Anuncio "*" -- "1" Colaborador: publicado por >
+Anuncio "1" -- "0..*" Candidatura: recebe >
+Anuncio "1" -- "1" Adjudicacao: dá origem a >
+
+Adjudicacao "1" -- "1" Freelancer: correspondente a >
+Adjudicacao "1" -- "1" Organizacao: correspondente a >
+@enduml

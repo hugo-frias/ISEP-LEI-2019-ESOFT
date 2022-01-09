@@ -1,0 +1,45 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+
+class AreaAtividade {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class CompetenciaTecnica {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class Categoria {
+  -String id
+  -String descricao
+}
+
+class CaraterCT {
+  -Boolean obrigatoria
+}
+
+class GrauProficiencia {
+  -Integer valor
+  -String designacao
+}
+
+Plataforma "1" -- "*" AreaAtividade : possui >
+Plataforma "1" -- "*" CompetenciaTecnica : possui >
+Plataforma "1" -- "*" Categoria : possui >
+CompetenciaTecnica "*" -- "1" AreaAtividade : referente a >
+Categoria "*" -- "1" AreaAtividade : enquadra-se em >
+Categoria"*" -- "*" CompetenciaTecnica : requer  >
+CaraterCT "*" -- "1" GrauProficiencia : exige (pelo menos) >
+CompetenciaTecnica "1" --  "0..*" GrauProficiencia : aplica >
+(Categoria, CompetenciaTecnica) .. CaraterCT
+@enduml

@@ -1,0 +1,51 @@
+@startuml
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+class Organização {
+  -String NIF
+  -String website
+  -String telefone
+  -String nome
+  -String email
+}
+class CompetenciaTecnica {
+  -String codigo
+  -String descBreve
+  -String DescDetalhada
+}
+
+class AreaAtividade {
+  -String codigo
+  -String descBreve
+  -String descDetalhada
+}
+
+class Tarefa {
+  -String refUnica
+  -String designacao
+  -String descInf
+  -String descTec
+  -String duracao
+  -String categoria
+  -double custo
+}
+class CategoriaTarefa {
+  -String identInterno
+  -String descricao
+  -String area
+}
+
+
+Plataforma "1" -- "*" AreaAtividade: possui >
+Plataforma "1" -- "*" CompetenciaTecnica: possui >
+Plataforma "1" -- "*" Organização: possui >
+CompetenciaTecnica "*" -- "1" AreaAtividade: referente a >
+AreaAtividade "1" -- "*" CategoriaTarefa: possui >
+Tarefa "*" -- "1" CategoriaTarefa: catalogada em >
+CompetenciaTecnica "*"-- "1" CategoriaTarefa: requer <
+Organização "1" -- "*" Tarefa: possui >
+@enduml

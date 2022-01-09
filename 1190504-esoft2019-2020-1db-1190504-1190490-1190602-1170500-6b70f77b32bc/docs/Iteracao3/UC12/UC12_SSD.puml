@@ -1,0 +1,22 @@
+@startuml
+autonumber
+actor "Freelancer" as Freelancer
+
+activate Freelancer
+Freelancer-> ":Sistema" : inicia o processo de retirar candidatura submetida
+activate ":Sistema"
+":Sistema" --> Freelancer: mostra a lista candidaturas submetidas
+deactivate ":Sistema"
+
+Freelancer-> ":Sistema" : seleciona a candidatura
+activate ":Sistema"
+":Sistema" --> Freelancer: apresenta os dados relativos à candidatura, pedindo ao freelancer para confirmar
+deactivate ":Sistema"
+
+Freelancer-> ":Sistema" : confirma
+activate ":Sistema"
+":Sistema" --> Freelancer: retira a candidatura selecionada e informa  o freelancer do sucesso da operação.
+deactivate ":Sistema"
+
+deactivate Freelancer
+@enduml

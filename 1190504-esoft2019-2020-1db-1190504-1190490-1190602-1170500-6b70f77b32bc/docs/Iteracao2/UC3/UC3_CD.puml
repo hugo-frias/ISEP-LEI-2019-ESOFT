@@ -1,0 +1,107 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+class DefinirCategoriaUI {
+}
+
+class DefinirCategoriaController {
+  +getRegistoAT()
+  +novaCategoria(desc,atCod)
+  +addCT(ctCod)
+  +getRegistoGP()
+  +addCaraterCT(ctCod,ob)
+  +addGrauMinEx(gp)
+  +registaCategoria()
+}
+
+class Plataforma {
+  -designacao
+  +getRegistoAT()
+  +getRegistoCategoria()
+  +getRegistoCT(at)
+  +getRegistoGP()
+}
+
+class CompetenciaTecnica {
+  -codigo
+  -descBreve
+  -descDetalhada
+  -grauProficiencia
+}
+
+class CaraterCT {
+  -obrigatoria
+  +CaraterCT(ct,ob)
+  -validaGrauMinEx(gme)
+  -addGrauMinEx(gme)
+}
+
+
+class Categoria {
+  -id
+  -descricao
+  +Categoria(id,desc,at)
+  +addCaraterCT(ct,ob)
+  -validaCaraterCT(cct)
+  -addCaraterCT(cct)
+}
+
+class AreaAtividade {
+  -codigo
+  -descBreve
+  -descDetalhada
+}
+
+class RegistoAreaAtividade {
+   +getAT(atCod)
+}
+
+class RegistoCompetenciaTecnica {
+   +getCT(ctCod)
+}
+
+class RegistoGrauProficiencia {
+}
+
+class RegistoCategoria {
+   +novaCategoria(desc,at)
+   -geraCategoriaId()
+   +registaCategoria(cat)
+   -validaCategoria(cat)
+   -addCategoria(cat)
+   
+}
+
+class GrauProficiencia {
+   -grau
+   -designação
+}
+
+class GrauMinimoExigivel {
+   -graus
+   +GrauMinimoExigivel (gp)
+}
+
+
+
+DefinirCategoriaUI ..> DefinirCategoriaController
+DefinirCategoriaController ..> Plataforma
+DefinirCategoriaController ..> AreaAtividade
+DefinirCategoriaController ..> CompetenciaTecnica
+DefinirCategoriaController ..> Categoria
+Plataforma "1" --> "1" RegistoCategoria : possui
+Plataforma "1" --> "1" RegistoAreaAtividade : possui
+Plataforma "1" --> "1" RegistoCompetenciaTecnica : possui
+Plataforma "1" --> "1" RegistoGrauProficiencia : possui
+RegistoCategoria "1" --> "1..*" Categoria : possui
+RegistoAreaAtividade "1" --> "1..*" AreaAtividade : possui
+RegistoGrauProficiencia "1" --> "1..*" GrauProficiencia : possui
+RegistoCompetenciaTecnica "1" --> "1..*" CompetenciaTecnica : possui
+CompetenciaTecnica "*" -> "1" AreaAtividade : referente a
+Categoria "*" --> "1" AreaAtividade : tem/requer
+Categoria "1" --> "*" CaraterCT : tem/requer
+CaraterCT "*" -> "1" CompetenciaTecnica : referente a
+CompetenciaTecnica "1" -> "1..*" GrauProficiencia : possui
+RegistoCompetenciaTecnica "1" -> "1..*" GrauProficiencia : instancia
+GrauProficiencia "1" -> "1..*" GrauMinimoExigivel : tem
+@enduml

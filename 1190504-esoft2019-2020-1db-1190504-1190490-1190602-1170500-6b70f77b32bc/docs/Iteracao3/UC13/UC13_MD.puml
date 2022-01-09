@@ -1,0 +1,95 @@
+@startuml
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+class Organização {
+  -String NIF
+  -String website
+  -String telefone
+  -String nome
+  -String email
+}
+class Colaborador {
+  -String funcao
+  -String telefone
+  -String nome
+  -String email
+}
+
+class Utilizador {
+  -String nome
+  -String email
+  -String password
+}
+class Tarefa {
+  -String refUnica
+  -String designacao
+  -String descInf
+  -String descTec
+  -Integer duracao
+  -Double custo
+}
+class Anuncio {
+  -Period publicitacao
+  -Period candidatura
+  -Period seriacao
+  -String anunId
+}
+class Seriacao {
+  -Date dataRealizacao
+}
+class Candidatura {
+  -Date dataCandidatura
+  -Double valorPretendido
+  -Integer numDias
+  -String txtApresentacao
+  -String txtMotivacao
+}
+class Classificacao {
+  -Integer posicao
+  -String justificacao
+}
+class RegimentoAplicavel {
+  -String designacao
+  -String descRegras
+  -String identificador
+}
+class Adjudicacao {
+  -Date dataRealizacao
+  -String numSequencial
+  -Period perRealizacao
+  -String refAnuncio
+  -String descTarefa
+  -Double valorConcordado
+}
+class SeriacaoManual {
+  -String txtConclusao
+}
+class SeriacaoAutomatica {
+}
+Plataforma "1" -- "*" Organização: possui >
+Plataforma "1" -- "*" RegimentoAplicavel: possui >
+Organização "1" -- "*" Colaborador: tem >
+Colaborador "1" --"1" Utilizador: atua como >
+Tarefa "*" -- "1" Colaborador: especificada por >
+Organização "1" -- "*" Tarefa: possui >
+Tarefa "1" -- "0..1" Anuncio: gera >
+Anuncio "1" -- "0..1" Seriacao: espoleta >
+Seriacao "1" -- "1" RegimentoAplicavel: aplica >
+Anuncio "1" -- "1" RegimentoAplicavel: conduzido por >
+Classificacao "0..1" -- "1" Candidatura: referente a >
+Candidatura "1" -- "*" Anuncio: enviada a >
+Plataforma "1" -- "*" Anuncio: possui >
+Anuncio "*" -- "1" Colaborador: publicado por >
+Anuncio "1" -- "0..1" Adjudicacao : espoleta >
+Classificacao "*" -- "1" Adjudicacao : de acordo com <
+Plataforma "1" -- "*" Adjudicacao: possui >
+Seriacao -- SeriacaoManual
+Seriacao -- SeriacaoAutomatica
+SeriacaoManual "1" -- "*" Classificacao: gera >
+SeriacaoManual "1" -- "*" Colaborador: realizada por >
+Adjudicacao "*" -- "1" Organização : correspondente a >
+@enduml

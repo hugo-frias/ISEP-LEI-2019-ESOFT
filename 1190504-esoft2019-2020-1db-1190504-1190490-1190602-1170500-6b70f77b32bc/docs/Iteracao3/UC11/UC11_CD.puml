@@ -1,0 +1,85 @@
+@startuml
+skinparam classAttributeIconSize 0
+left to right direction
+
+class AtualizarCandidaturaUI {
+}
+
+class AtualizarCandidaturaController {
+  +getAnunciosElegiveisDoFreelancer()
+  +getDadosDaCandidatura(valorPrt, nrDias,txtApres, txtMotiv)
+  +guardaDadosNaoSelecionados (DadosNaoSelecionados)
+  +setCandidaturaDosDadosSelecionados(NovosDados)
+  +atualizaCandidatura(cand,novosDados)
+}
+
+class Plataforma {
+  -String designacao
+  +getRegistoFreelancers()
+  +getRegistoAnuncios()
+}
+
+class RegistoFreelancer
+{
+ +getFreelancerByEmail(email)
+}
+
+class RegistoAnuncios
+{
+  +getAnunciosElegiveisDoFreelancer(freel)
+  +getCandidaturasValidadasDoFreelancerByEmail(email)
+}
+
+class Freelancer {
+    -String nome
+    -String NIF
+    -String telefone
+    -String email
+}
+
+class Anuncio
+{
+  -Period publicitacao
+  -Period candidatura
+  -Period seriacao
+  -aceitaCandidaturaAtualizada()
+  -éFreelancerElegivel(freel)
+  +atualizaCandidatura(cand, novosDados)
+}
+
+class ListaCandidaturas
+{
+  +getCandidaturaById(candidaturaid)
+  -validaCandidaturaAtualizada(cand, novosDados)
+  -atualizaCandidatura(cand, novosDados)
+}
+
+class Candidatura
+{
+  -Date dataCandidatura
+  -Double valorPretendido
+  -Integer numDias
+  -String txtApresentacao
+  -String txtMotivacao
+  +getDadosDaCandidatura(valorPrt, nrDias,txtApres, txtMotiv)
+  +guardaDadosNaoSelecionados (DadosNaoSelecionados)
+  +setCandidaturaDoDadoSelecionado(NovosDados)
+
+}
+
+AtualizarCandidaturaUI ..> AtualizarCandidaturaController 
+AtualizarCandidaturaController ..> Plataforma
+AtualizarCandidaturaController ..> RegistoFreelancer
+AtualizarCandidaturaController ..> RegistoAnuncios
+
+Plataforma "1" --> "1" RegistoAnuncios : possui
+Plataforma "1" --> "1" RegistoFreelancer : possui
+
+RegistoAnuncios "1" --> "*" Anuncio : agrega
+Anuncio "1" --> "1" ListaCandidaturas : possui
+ListaCandidaturas "1" --> "*" Candidatura : agrega
+
+Candidatura "*" --> "1"  Freelancer: realizada/removida por >
+
+RegistoFreelancer "1" --> "*" Freelancer: agrega
+@enduml

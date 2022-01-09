@@ -1,0 +1,48 @@
+@startuml
+hide methods
+left to right direction
+
+class Plataforma {
+  -String designacao
+}
+class Organização {
+  -String NIF
+  -String website
+  -String telefone
+  -String nome
+  -String email
+}
+class Colaborador {
+  -String funcao
+  -String telefone
+  -String nome
+  -String email
+}
+
+class Utilizador {
+  -String nome
+  -String email
+  -String password
+}
+class Tarefa {
+  -String refUnica
+  -String designacao
+  -String descInf
+  -String descTec
+  -String duracao
+  -String categoria
+  -double custo
+}
+class CategoriaTarefa {
+  -String identInterno
+  -String descricao
+}
+
+Plataforma "1" -- "*" Organização: possui >
+Plataforma "1" -- "*" CategoriaTarefa: possui >
+Organização "1" -- "*" Colaborador: tem >
+Colaborador "1" --"1" Utilizador: atua como >
+Tarefa "*" -- "1" Colaborador: especificada por >
+Tarefa "*" -- "1" CategoriaTarefa: catalogada em >
+Organização "1" -- "*" Tarefa: possui >
+@enduml

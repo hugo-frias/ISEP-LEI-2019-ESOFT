@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1295px" preserveAspectRatio="none" style="width:621px;height:1295px;" version="1.1" viewBox="0 0 621 1295" width="621px" zoomAndPan="magnify"><defs><filter height="300%" id="fugrpa66apbru" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="439.709" cy="1244.5418" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="108.209" ry="24.0418" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="194" x="342.709" y="1249.1902">UC1 - Registar Organização</text><ellipse cx="439.2717" cy="885.5543" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="120.7717" ry="26.5543" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="221" x="328.7717" y="890.2028">UC2 - Definir Área de Atividade</text><ellipse cx="439.5468" cy="976.5094" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="133.0468" ry="29.0094" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="247" x="316.0468" y="981.1578">UC3 - Definir Categoria (de Tarefa)</text><ellipse cx="439.3078" cy="1072.6616" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="148.8078" ry="32.1616" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="280" x="299.3078" y="1077.31">UC4 - Especificar Competência Técnica</text><ellipse cx="439.4998" cy="685.7" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="171.4998" ry="36.7" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="327" x="275.9998" y="690.3484">UC5 - Especificar Colaborador de Organização</text><ellipse cx="439.711" cy="419.4422" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="97.711" ry="21.9422" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="171" x="354.211" y="424.0906">UC6 - Especificar Tarefa</text><ellipse cx="439.7042" cy="1162.4408" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="102.7042" ry="22.9408" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="182" x="348.7042" y="1167.0893">UC7 - Registar Freelancer</text><ellipse cx="439.4744" cy="496.3949" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="87.4744" ry="19.8949" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="148" x="365.4744" y="501.0433">UC8 - Publicar Tarefa</text><ellipse cx="439.5751" cy="140.715" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="104.0751" ry="23.215" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="185" x="347.0751" y="145.3635">UC9 - Efetuar Candidatura</text><ellipse cx="439.5786" cy="582.4157" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="142.5786" ry="30.9157" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="267" x="306.0786" y="587.0642">UC10 - Seriar (manualmente) Anuncio</text><ellipse cx="439.6907" cy="231.7381" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="151.6907" ry="32.7381" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="286" x="296.6907" y="236.3866">UC11 - Atualizar Candidatura Submetida</text><ellipse cx="439.4716" cy="330.3943" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="144.9716" ry="31.3943" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="272" x="303.4716" y="335.0428">UC12 - Retirar Candidatura Submetida</text><ellipse cx="439.4876" cy="48.2975" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="156.9876" ry="33.7975" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="297" x="290.9876" y="52.946">UC13 - Seriar (automaticamente) Anuncio</text><ellipse cx="439.6152" cy="790.623" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="153.6152" ry="33.123" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="290" x="294.6152" y="795.2715">UC14 - Adjudicar (manualmente) Anuncio</text><!--MD5=[2ef883c7bda54365519191918ae31df7]
+entity UNR--><ellipse cx="107" cy="1213.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,1221.5 L107,1248.5 M94,1229.5 L120,1229.5 M107,1248.5 L94,1263.5 M107,1248.5 L120,1263.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="175" x="19.5" y="1281.9951">Utilizador Não Registado</text><!--MD5=[5bb58f447e60c14e9d23282c6a4405f4]
+entity ADM--><ellipse cx="107" cy="993.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,1001.5 L107,1028.5 M94,1009.5 L120,1009.5 M107,1028.5 L94,1043.5 M107,1028.5 L120,1043.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="106" x="54" y="1061.9951">Administrativo</text><!--MD5=[aba3a422084821251358def362bf37bd]
+entity GO--><ellipse cx="107" cy="707.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,715.5 L107,742.5 M94,723.5 L120,723.5 M107,742.5 L94,757.5 M107,742.5 L120,757.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="163" x="25.5" y="775.9951">Gestor de Organização</text><!--MD5=[b5af4e906b5608882632c7d969b5b8a1]
+entity CO--><ellipse cx="107" cy="465.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,473.5 L107,500.5 M94,481.5 L120,481.5 M107,500.5 L94,515.5 M107,500.5 L120,515.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="202" x="6" y="533.9951">Colaborador de Organização</text><!--MD5=[254daa4c0aa61d7f44e2a06cbfcf4906]
+entity FRL--><ellipse cx="107" cy="200.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,208.5 L107,235.5 M94,216.5 L120,216.5 M107,235.5 L94,250.5 M107,235.5 L120,250.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="76" x="69" y="268.9951">Freelancer</text><!--MD5=[657a27d3a0ae81e1699f31e20bf58062]
+entity TIMER--><ellipse cx="107" cy="17.5" fill="#FEFECE" filter="url(#fugrpa66apbru)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 1.5;"/><path d="M107,25.5 L107,52.5 M94,33.5 L120,33.5 M107,52.5 L94,67.5 M107,52.5 L120,67.5 " fill="none" filter="url(#fugrpa66apbru)" style="stroke: #A80036; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="86" y="85.9951">Timer</text><!--MD5=[7b21f0941fa32888f6ae813cc64547f3]
+link UNR to UC1--><path d="M194.835,1244.5 C234.991,1244.5 283.19,1244.5 326.082,1244.5 " fill="none" id="UNR-&gt;UC1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="331.285,1244.5,322.285,1240.5,326.285,1244.5,322.285,1248.5,331.285,1244.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[afb96f077b5aad6802be8a4e992892ce]
+link ADM to UC2--><path d="M160.165,988.932 C190.557,969.487 230.229,946.23 268,930.5 C292.64,920.238 320.274,911.747 346.003,905.01 " fill="none" id="ADM-&gt;UC2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="351.122,903.686,341.4068,902.069,346.2815,904.939,343.4116,909.8137,351.122,903.686" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[db1eef6a14ce759cd1b7bb831ae99df7]
+link ADM to UC3--><path d="M160.004,1016.947 C203.678,1010.604 267.685,1001.308 323.327,993.227 " fill="none" id="ADM-&gt;UC3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="328.341,992.499,318.8587,989.8369,323.3931,993.2191,320.0109,997.7535,328.341,992.499" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[75201264684ae616ead1678418b4a491]
+link ADM to UC4--><path d="M160.004,1032.053 C200.332,1037.91 257.997,1046.285 310.404,1053.896 " fill="none" id="ADM-&gt;UC4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="315.459,1054.63,307.1274,1049.3779,310.5109,1053.9113,305.9775,1057.2948,315.459,1054.63" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[61e2851b57f1057bb235dfe3d194050f]
+link ADM to UC7--><path d="M160.148,1062.335 C190.373,1082.721 229.888,1106.834 268,1122.5 C294.341,1133.328 324.233,1141.587 351.55,1147.708 " fill="none" id="ADM-&gt;UC7" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="356.619,1148.826,348.692,1142.9812,351.7364,1147.7489,346.9686,1150.7933,356.619,1148.826" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1877500cdd58ac1719eab615bb0e1b9e]
+link GO to UC5--><path d="M188.849,725.535 C221.495,720.3 260.149,714.101 297.166,708.165 " fill="none" id="GO-&gt;UC5" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="302.142,707.367,292.6223,704.8419,297.205,708.1584,293.8886,712.7411,302.142,707.367" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5f7cb9f8884ff50d92720e9124d84a00]
+link GO to UC14--><path d="M188.849,751.221 C225.301,756.956 269.243,763.87 310.034,770.288 " fill="none" id="GO-&gt;UC14" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="314.992,771.068,306.7232,765.7176,310.0528,770.2908,305.4796,773.6203,314.992,771.068" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[980c96a9d2d6a561803d016e26da8f75]
+link CO to UC6--><path d="M208.058,473.189 C258.926,461.337 319.61,447.199 365.933,436.407 " fill="none" id="CO-&gt;UC6" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="370.939,435.24,361.2661,433.3865,366.0694,436.3745,363.0814,441.1778,370.939,435.24" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[93d5ce3551d281a7b6e71a46e8ebf406]
+link CO to UC8--><path d="M208.058,496.5 C252.148,496.5 303.612,496.5 346.708,496.5 " fill="none" id="CO-&gt;UC8" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="351.921,496.5,342.921,492.5,346.921,496.5,342.921,500.5,351.921,496.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[8c121b75bc13107d81fe560c8e6e0c52]
+link CO to UC10--><path d="M208.058,522.536 C250.774,533.652 300.412,546.568 342.655,557.56 " fill="none" id="CO-&gt;UC10" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="347.505,558.822,339.8018,552.6852,342.666,557.5633,337.7879,560.4276,347.505,558.822" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[076cce80958f60d1fbfc44bd6d0380c9]
+link FRL to UC9--><path d="M145.291,219.07 C177.586,208.49 225.641,193.2 268,181.5 C298.238,173.15 331.756,164.88 361.015,157.98 " fill="none" id="FRL-&gt;UC9" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="366.049,156.79,356.3723,154.9567,361.1818,157.9347,358.2038,162.7443,366.049,156.79" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5f400686cbd9d5e585c1c3132b0d60f7]
+link FRL to UC11--><path d="M145.27,231.5 C179.136,231.5 231.481,231.5 282.624,231.5 " fill="none" id="FRL-&gt;UC11" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="287.888,231.5,278.888,227.5,282.888,231.5,278.888,235.5,287.888,231.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[094edc4e287363ae8660b7d893da846e]
+link FRL to UC12--><path d="M145.105,243.36 C177.486,253.65 225.768,268.83 268,281.5 C293.03,289.006 320.196,296.919 345.334,304.145 " fill="none" id="FRL-&gt;UC12" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="350.333,305.581,342.7861,299.2529,345.5271,304.2014,340.5787,306.9424,350.333,305.581" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e32cc58a631d991bb2b3da2e3767d64f]
+link TIMER to UC13--><path d="M128.177,48.5 C158.31,48.5 217.861,48.5 276.808,48.5 " fill="none" id="TIMER-&gt;UC13" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="282.143,48.5,273.143,44.5,277.143,48.5,273.143,52.5,282.143,48.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[7725e6b6885690c9adb91c0c4c3488fe]
+@startuml
+usecase UC1 as "UC1 - Registar Organização"
+usecase UC2 as "UC2 - Definir Área de Atividade"
+usecase UC3 as "UC3 - Definir Categoria (de Tarefa)"
+usecase UC4 as "UC4 - Especificar Competência Técnica"
+usecase UC5 as "UC5 - Especificar Colaborador de Organização"
+usecase UC6 as "UC6 - Especificar Tarefa"
+usecase UC7 as "UC7 - Registar Freelancer"
+usecase UC8 as "UC8 - Publicar Tarefa"
+usecase UC9 as "UC9 - Efetuar Candidatura"
+usecase UC10 as "UC10 - Seriar (manualmente) Anuncio"
+usecase UC11 as "UC11 - Atualizar Candidatura Submetida"
+usecase UC12 as "UC12 - Retirar Candidatura Submetida"
+usecase UC13 as "UC13 - Seriar (automaticamente) Anuncio"
+usecase UC14 as "UC14 - Adjudicar (manualmente) Anuncio"
+
+actor "Utilizador Não Registado" as UNR
+actor "Administrativo" as ADM
+actor "Gestor de Organização" as GO
+actor "Colaborador de Organização" as CO
+actor "Freelancer" as FRL
+actor "Timer" as TIMER
+
+left to right direction
+UNR - ->(UC1)
+
+ADM - ->(UC2)
+ADM - ->(UC3)
+ADM - ->(UC4)
+ADM - ->(UC7)
+
+GO - ->(UC5)
+GO - ->(UC14)
+
+
+CO - -> (UC6)
+CO - -> (UC8)
+CO - -> (UC10)
+
+FRL - -> (UC9)
+FRL - -> (UC11)
+FRL - -> (UC12)
+
+TIMER - -> (UC13)
+@enduml
+
+PlantUML version 1.2020.10(Sun May 17 09:48:49 UTC 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
